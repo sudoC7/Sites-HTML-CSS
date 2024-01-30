@@ -3,15 +3,21 @@
 * {
     margin: 0;
 }
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
 
 /* l'image du background */
-body {
+/* body {
     background-image: url("./img/banner.jpg") ;
     background-position: center;
     background-position-y: -225px; /* -225px plus précis ou 22% */
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    /* background-attachment: fixed; */
+/*}*/ 
 
 /* =============== HEADER =============== */
 
@@ -25,14 +31,21 @@ body {
     align-items:flex-end;
     justify-content: space-between;
     padding-bottom: 15px;
+    /* width: max-content; */
 }
 
 .logoPrincipale {
     height: 85px;
 }
 
+
+/* début du " nav "  */
+nav {
+    display: flex;
+}
+
 .leNavDuHeader {
-    width: 1615px;
+    width: auto; 
     display: flex;
     justify-content: space-evenly;
 }
@@ -42,28 +55,37 @@ body {
     color: black;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
+    padding: 0 30px;
 }
+/* fin du " nav " */
 
+
+.deuxiemeBarDuHeaderPosition {
+    position:absolute;
+    bottom: 30%;
+    width: 100%;
+}
 
 .deuxiemeBarDuHeader {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 1%;
-    background: greenyellow;
+    background: rgba(67, 123, 0, 0.54);
 }
 
 .deuxiemeBarDuHeader p {
     font-weight: 600;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 17px
+    font-size: 17px;
+    color: #ffff;
 }
 
 .premierButton {
     border-radius: 5px;
     color: #69A720;
 
-}
+} 
 
 
 
